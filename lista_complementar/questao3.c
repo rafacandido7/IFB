@@ -6,15 +6,12 @@ int main () {
 	printf("Qual é o valor de x?\n");
 
 	int x = 0;
+	scanf("%d", &x);
+	int result;
 
-	scanf ("%d",&x);
+	result = sqrt(x)+(x/2)+pow(x,x);
 
-	printf("%d\n", x);
-
-	float raiz = sqrt(x);
-	printf("%f\n", raiz);
-	float exp = pow(x,x);
-	printf("%f\n", exp);
+	printf("O Resultado de f(%d) e %d\n", x, result);
 
 	return 0;
 }

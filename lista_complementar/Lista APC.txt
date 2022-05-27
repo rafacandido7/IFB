@@ -4,5 +4,5 @@ c)float
 d)double
 
 2.a) "char a" cria a variável 'a' do tipo char.
-b)a variável 'a' é definida como char '6'.
+b)a variável 'a' é definida como char '6'., logo se der um pronto
 c)a variável 'a' é definida como int '6'.
