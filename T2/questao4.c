@@ -6,7 +6,7 @@ int main () {
     printf("Insira o valor n:\n");
     scanf("%d", &n);
 
-    printf("Os divisores de %d são:\n", n);
+    printf("Os divisores de %d são:\n1", n);
 
     for (i = 2; i <= n; i++) {
         if (n % i == 0) {
