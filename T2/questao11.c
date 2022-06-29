@@ -1,4 +1,8 @@
 #include <stdio.h>
+void flush_in(){ 
+    int ch;
+    while( (ch = fgetc(stdin)) != EOF && ch != '\n' ){} 
+}
 
 int main() {
     int primeiroIntervalo = 0, segundoIntervalo = 0, terceiroIntervalo = 0, quartoIntervalo = 0, n, i;
@@ -23,6 +27,7 @@ int main() {
         } else if ((76 <= x) && (x <= 100)) {
             quartoIntervalo++;
         }
+        flush_in();
         x = 0;
     }
 
