@@ -1,14 +1,25 @@
 #include <stdio.h>
 
-int main () {
-    printf("========= Menor número primo que é maior ou igual a n =========\n");
-    int n, i;
-    printf("Insira um número n\n");
-    scanf("%d", &n);
+int main() {
+    int n = 0,d,r=0, cont;
 
-    for (i = n; i % n == 0; i++) {
-        if (i % n == 0) {
-            if ()
+    printf("Entre com um numero: ");
+    scanf("%d", &n);
+    do {
+        cont = 0;
+        d = 1;
+        n++;
+        while (d <= n) {
+            r = n % d;
+            if (r == 0) {
+                cont++;
+            }
+            d++;
         }
-    }
+        
+    } while (cont != 2);
+    
+    printf("Maior Numero Primo: %d\n", n);
+    
+    return 0;
 }
